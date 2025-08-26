@@ -60,7 +60,7 @@ namespace Data_Structures.LinkedLists
                 Console.Write("[ ");
                 while(current.Next != null)
                 {
-                    Console.Write(current.Val+" ,");
+                    Console.Write(current.Val+" -> ");
                     current = current.Next;
                 }
                     Console.WriteLine(" "+ current.Val + " ]");
@@ -81,3 +81,4 @@ namespace Data_Structures.LinkedLists
         }
     }
 }
+
