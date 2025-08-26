@@ -53,7 +53,7 @@ namespace Data_Structures.Stack
             {
                throw new Exception("I cant look at nothing");
             }
-            return stack.Val);
+            return stack.Val;
         }
 
 
@@ -72,4 +72,5 @@ namespace Data_Structures.Stack
         }
     }
 }
+
 
