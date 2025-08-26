@@ -18,17 +18,16 @@ namespace Data_Structures.Stack
             stack = node;
         }
 
-        public void Pop()
+        public T Pop()
         {
-            if (stack == null)
-            {
-                Console.WriteLine("There is no shit to poop");
-                return;
+            if (stack == null){
+                throw new Exception("There is no shit to poop");
             }
             else
-            {
+            {        
                 Node<T> node = stack.Next;
                 stack = node;
+                return node.Val;
             }
         }
 
@@ -36,7 +35,7 @@ namespace Data_Structures.Stack
         {
             if(stack == null)
             {
-                Console.WriteLine("Brother, the stack, its empty");
+                Console.WriteLine("Brother, the stack, its empty, we're cooked");
             }
 
             Node<T> current = stack;
@@ -48,13 +47,13 @@ namespace Data_Structures.Stack
             Console.WriteLine("Stack ended");
         }
 
-        public void Peek()
+        public T Peek()
         {
             if(stack == null)
             {
-                Console.WriteLine("I cant look at nothing");
+               throw new Exception("I cant look at nothing");
             }
-            Console.WriteLine("The stackmost element is " + stack.Val);
+            return stack.Val);
         }
 
 
@@ -73,3 +72,4 @@ namespace Data_Structures.Stack
         }
     }
 }
+
