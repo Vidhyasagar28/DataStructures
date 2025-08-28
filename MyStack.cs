@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Data_Structures.Stack
+﻿namespace Data_Structures.Stack
 {
     public class MyStack<T>
     {
@@ -20,11 +14,12 @@ namespace Data_Structures.Stack
 
         public T Pop()
         {
-            if (stack == null){
+            if (stack == null)
+            {
                 throw new Exception("There is no shit to poop");
             }
             else
-            {        
+            {
                 Node<T> node = stack.Next;
                 stack = node;
                 return node.Val;
@@ -35,7 +30,7 @@ namespace Data_Structures.Stack
         {
             if(stack == null)
             {
-                Console.WriteLine("Brother, the stack, its empty, we're cooked");
+                Console.WriteLine("Brother, the stack, its empty");
             }
 
             Node<T> current = stack;
@@ -49,9 +44,9 @@ namespace Data_Structures.Stack
 
         public T Peek()
         {
-            if(stack == null)
+            if (stack == null)
             {
-               throw new Exception("I cant look at nothing");
+                throw new Exception("I cant look at nothing");
             }
             return stack.Val;
         }
@@ -72,5 +67,3 @@ namespace Data_Structures.Stack
         }
     }
 }
-
-
