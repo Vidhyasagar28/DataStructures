@@ -9,3 +9,6 @@ Added Stack implementation based of of the previous Singly Linked List node
 
 # Doubly Linked List
 Added doublylinkedlist code, implementation
+
+# Queue
+Added my implementation of Queue Data structure using arrays, also using circular arrays
