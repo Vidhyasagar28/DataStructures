@@ -12,3 +12,6 @@ Added doublylinkedlist code, implementation
 
 # Queue
 Added my implementation of Queue Data structure using arrays, also using circular arrays
+
+# HashMap
+Added my implementation of HashMap and using linked list to chain on collision
