@@ -15,3 +15,6 @@ Added my implementation of Queue Data structure using arrays, also using circula
 
 # HashMap
 Added my implementation of HashMap and using linked list to chain on collision
+
+# Binary Search Tree
+Added my implementation of Binary Search Tree, it has insert, delete and print. Delete handles all cases for 0 to 2 nodes. Also keeps track of duplicates.
