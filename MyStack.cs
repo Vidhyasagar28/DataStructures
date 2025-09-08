@@ -20,8 +20,8 @@
             }
             else
             {
-                Node<T> node = stack.Next;
-                stack = node;
+                Node<T> node = stack;
+                stack = stack.Next;
                 return node.Val;
             }
         }
@@ -67,3 +67,4 @@
         }
     }
 }
+
